@@ -1,0 +1,12 @@
+{
+  "name": "rotate-matrix",
+  "version": "1.0.0",
+  "description": "example of rotate matrix implementation",
+  "main": "impl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc imple.ts --outFile impl.js -w"
+  },
+  "author": "Eduardo",
+  "license": "GPL"
+}
