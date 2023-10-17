@@ -5,7 +5,7 @@ var matrix = [
     [8, 5, 3, 1]
 ];
 var originalMatrix = document.querySelector('.original-wrapper');
-originalMatrix.insertAdjacentHTML('afterend', "<code>[".concat(matrix.join('<br/>'), "]</code>"));
+originalMatrix === null || originalMatrix === void 0 ? void 0 : originalMatrix.insertAdjacentHTML('afterend', "<code>[".concat(matrix.join('<br/>'), "]</code>"));
 var rotatedMatrix = document.querySelector('.rotated-wrapper');
 function rotate(matrix) {
     // break the matrix reference
@@ -27,6 +27,6 @@ function rotate(matrix) {
     drawRotated(rotateMatrix);
 }
 function drawRotated(matrix) {
-    rotatedMatrix.insertAdjacentHTML('afterbegin', "<code>[".concat(matrix.join('<br/>'), "]</code>"));
+    rotatedMatrix === null || rotatedMatrix === void 0 ? void 0 : rotatedMatrix.insertAdjacentHTML('afterbegin', "<code>[".concat(matrix.join('<br/>'), "]</code>"));
 }
 rotate(matrix);

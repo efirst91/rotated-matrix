@@ -4,12 +4,12 @@ const matrix = [
     [8, 9, 1, 5],
     [8, 5, 3, 1]
 ]
-const originalMatrix: Element = document.querySelector('.original-wrapper');
-originalMatrix.insertAdjacentHTML(
+const originalMatrix: Element | null = document.querySelector('.original-wrapper');
+originalMatrix?.insertAdjacentHTML(
     'afterend',
     `<code>[${matrix.join('<br/>')}]</code>`
 );
-const rotatedMatrix: Element = document.querySelector('.rotated-wrapper');
+const rotatedMatrix: Element | null = document.querySelector('.rotated-wrapper');
 
 
 function rotate(matrix: number[][]): void {
@@ -37,7 +37,7 @@ function rotate(matrix: number[][]): void {
 }
 
 function drawRotated(matrix: number[][]): void {
-    rotatedMatrix.insertAdjacentHTML(
+    rotatedMatrix?.insertAdjacentHTML(
         'afterbegin',
         `<code>[${matrix.join('<br/>')}]</code>`
     )
